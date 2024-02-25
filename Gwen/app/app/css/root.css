@@ -1,0 +1,76 @@
+﻿
+:root {
+    --header-height: 64px;
+    --nav-width: 68px;
+    --first-color: #EE574D;
+    --first-color-light: #f49a94;
+    --first-color-super-light: #FFE7E6;
+    --first-color-lush: rgb(253, 238,237);
+    --first-color-semi-light: rgb(253, 238,237);
+    --placeholder-color: gray;
+    --white-color: #FAFAFA;
+    --body-font: Segoe UI,Arial,sans-serif;
+    --normal-font-size: 12pt;
+    --normal-font-size-sm: 11pt;
+    --bigger-font-size: 18pt;
+    --z-fixed: 100;
+    --white: #FFFFFF;
+    --second-color: #02808A;
+    --second-color-light: #7fc4c9;
+    --text-color: #2F2F2F;
+    --background: #FAFAFA;
+    --third-color: #18C8D5;
+    --range-thumb-color: #18C8D5;
+    --range-thumb-color-transparent: rgba(4,143,154,.2);
+    --range-thumb-color-transparent-2: rgba(4,143,154,.5);
+    --bar-color: #EBEBEB;
+    --bar-color-dark: #EBEBEB;
+    --bar-color-icon: lightgray;
+    --question-comment-area-bg: #ebebeb66;
+    --tabbar-height: 55px;
+    --tabbar-height-negative: -55px;
+    --report-view-period-width: 240px;
+    --report-view-period-margin: 30px;
+    --ipc-color: #C0D72F;
+    --default-nav-tabs-height: 28px;
+    --nav-tabs-height: 28px;
+    --header-color: #FAFAFA;
+    --panel-background: #FFFFFF;
+    --text-color-login: #ef5d53;
+    --placeholder-color-login: #f6aea9;
+    --login-background: #FAFAFA;
+    --login-btn-color: #EE574D;
+    --login-btn-color-hover: #d7534a;
+    --login-btn-text-color: white;
+    --login-outline-btn-color: #ef5d53;
+    --image-label-color: rgba(0,0,0,.7);
+    --badge-color: #d0f2f5;
+    --badge-text-color: #2F2F2F;
+    --badge-icon-color: #02808A;
+    --badge-color-light: #e2f7f9;
+    --badge-text-color-light: #247b82;
+    --active-selector-color: #B0E8EC;
+    --login-default-color: white;
+    --report-background: #FAFAFA;
+    --notification-color: red;
+    --strike-color: rgba(237,73,62,.7);
+    --scrollbar-color-light: #ededed;
+    --selection-background: #15d58f;
+    --tr-hover-color: #e2f7f9;
+    --color-success: #12bf7f;
+    --iep-first-color: #c3d500;
+    --iep-second-color: rgb(25,151,170);
+    --iep-second-color-light: rgba(25,151,170, 0.5);
+    --color-success-light: #bcf5e0;
+}
+
+/*schoolarea settings*/
+span[style="background-color: rgb(77, 125, 195);"] {
+    background-color: #15C7D5 !important;
+}
+
+span[style="background-color: rgb(195, 77, 125);"] {
+    background-color: #EE574D !important;
+}
+
+

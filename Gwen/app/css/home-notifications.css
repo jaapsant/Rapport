@@ -1,0 +1,74 @@
+﻿.notifications-container .header-img .student_name {
+    display: inline-block;
+    margin: 10px;
+    float: left;
+}
+
+.notifications-container .header-img img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.notifications-container .header-img small {
+    font-size: 10pt;
+    color: gray;
+}
+
+.notifications-container p, .notifications-container .compressed-text {
+    margin: 10px 5px;
+}
+
+.notification-container-body {
+    clear: both;
+}
+
+.notifications-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+    .notifications-container img {
+        border-radius: 15px;
+    }
+
+    .notifications-container .img-sm {
+        background: transparent !important;
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+
+    .notifications-container .notification-container-body img {
+        max-height: 300px;
+        width: unset;
+        margin: 10px 0;
+    }
+
+        .notifications-container .notification-container-body img.bg-img,
+        .notifications-container .rotate-btn {
+            display: none;
+        }
+
+
+.slider-container {
+    text-align: center;
+}
+
+
+.notifications-container .bx-microphone,
+.notifications-container .bxs-file-pdf,
+.notifications-container .bxs-file-doc,
+.notifications-container .bxs-file-blank {
+    padding: 0;
+}
+
+
+.notifications-container .btn {
+    height: 24px;
+    padding: 3px 8px;
+}

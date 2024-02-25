@@ -1,0 +1,46 @@
+﻿.rating > label:before {
+    content: "\f005";
+}
+/*.bs-ok-default:before,
+.glyphicon-ok:before {
+    content: "\f058";
+}
+*/
+
+.lib-all .rekenen-en-wiskunde .c3-event-rect,
+.lib-all .rekenen .c3-event-rect {
+    fill: url('#rekenen-en-wiskunde'); /*bundleconfig adds ./ for some reason*/
+}
+
+.lib-all .spelling .c3-event-rect,
+.lib-all .taal .c3-event-rect {
+    fill: url('#spelling'); /*bundleconfig adds ./ for some reason*/
+}
+
+.lib-all .begrijpend-lezen .c3-event-rect {
+    fill: url('#begrijpend-lezen'); /*bundleconfig adds ./ for some reason*/
+}
+
+.lib-all .technisch-lezen .c3-event-rect {
+    fill: url('#technisch-lezen'); /*bundleconfig adds ./ for some reason*/
+}
+
+.lib-all .technisch-lezen.drie-minuten-toets .c3-event-rect {
+    fill: url('#technisch-lezen-drie-minuten-toets'); /*bundleconfig adds ./ for some reason*/
+}
+
+.lib-all .engels .c3-event-rect {
+    fill: url('#engels'); /*bundleconfig adds ./ for some reason*/
+}
+
+.lib-all .overig .c3-event-rect {
+    fill: url('#overig'); /*bundleconfig adds ./ for some reason*/
+}
+
+.lib-all .avi .c3-event-rect {
+    fill: url('#technisch-lezen-avi'); /*bundleconfig adds ./ for some reason*/
+}
+
+.iep .lib-all .c3-event-rect {
+    fill: url('#iep-chart-pattern'); /*bundleconfig adds ./ for some reason*/
+}

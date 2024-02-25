@@ -1,0 +1,8 @@
+﻿
+.paper-container.front-page .background-wrap {
+    background: url('../app/images/report/default/achtergrond.svg');
+}
+
+.paper-container.front-page .login-form {
+    background: url('../app/images/report/default/praatwolk.svg');
+}

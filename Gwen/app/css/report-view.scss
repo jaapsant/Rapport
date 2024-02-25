@@ -1,0 +1,499 @@
+﻿
+$period-width: 255; /*230; */ /*equals var(--report-view-period-width) + var(--report-view-period-margin)*/
+$max-periods: 10;
+$sreen-width-one-period: 965;
+$sreen-width-two-period: 1235;
+$max-radiobuttons: 14;
+/*$menu-show:768;
+$menu-show-padding:164;*/
+/*todo::after not yet working properly with menu show/hide*/
+
+.report-view .print-title ~ .question-group {
+    margin-top: 30px;
+}
+
+.report-view .print-title ~ .question-group ~ .question-group {
+    margin-top: 50px;
+}
+/*
+.report-view-container:not(.class-overview) .nav-tabs {
+    margin-bottom: 33px;
+}*/
+/*.report-view-container .relative-panel:not(.chart-panel) .container-title-lbl {
+  min-width: 265px;
+}*/
+
+.report-view-container .print-title + .question-group .relative-panel:first-child .container-title-lbl {
+    min-width: 265px;
+}
+
+/*.report-view.has-relative-panel-status .print-title + .question-group .period-title:nth-child(1),
+.report-view.has-relative-panel-status .print-title + .question-group .container-100:nth-child(2) .text-header {*/
+    /*display: none;*/
+    /*right: calc((var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 + 20px) !important
+}*/
+
+.report-view.has-relative-panel-status[data-assessor-count="2"] .print-title + .question-group .period-title:nth-child(1),
+.report-view.has-relative-panel-status[data-assessor-count="2"] .print-title + .question-group .container-100:nth-child(2) .text-header {
+    /*display: none;*/
+    right: calc((var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 + 20px + 35px) !important;
+}
+
+.report-view.has-relative-panel-status[data-assessor-count="3"] .print-title + .question-group .period-title:nth-child(1),
+.report-view.has-relative-panel-status[data-assessor-count="4"] .print-title + .question-group .period-title:nth-child(1) /*,
+.report-view.has-relative-panel-status[data-assessor-count="3"] .print-title + .question-group .container-100:nth-child(2) .text-header*/ {
+    display: none;/*not enough space: do not display*/
+}
+
+.report-view .relative-panel ~ .relative-panel {
+    margin-top: 50px;
+}
+
+.report-view-container .relative-panel ~ .relative-panel .container-title-lbl {
+    min-width: unset;
+}
+
+.report-view-tabs .report-view-lg {
+    display: block;
+}
+
+.report-view-sm {
+    display: none;
+}
+
+@media screen and (max-width: 520px) {
+    .report-view-tabs .report-view-sm {
+        display: block;
+    }
+
+    .report-view-tabs .report-view-lg {
+        display: none;
+    }
+
+    .report-view-container .relative-panel .container-title-lbl {
+        min-width: 145px;
+    }
+
+    .report-view-container .relative-panel:not(.chart-panel) .container-title-lbl {
+        min-width: 145px;
+    }
+
+    .report-view-container .print-title + .question-group .relative-panel:first-child .container-title-lbl {
+        min-width: 150px;
+    }
+}
+
+.report-view .period-title,
+.report-view .text-header:not(.question-header) {
+    float: right;
+    font-weight: normal;
+    width: var(--report-view-period-width);
+    text-align: center;
+    margin-left: var(--report-view-period-margin);
+    position: absolute;
+    right: 0;
+    top: -29px;
+    background-color: var(--panel-background);
+    color: var(--second-color);
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: max-content;
+    margin: auto;
+    padding: 6px 12px;
+    border-radius: 15px 15px 0 0;
+    font-size: 10pt;
+    z-index: -1;
+}
+
+.ios .report-view .period-title,
+.ios .report-view .text-header:not(.question-header) {
+    /*workaround for ios*/
+    padding: 6px 0;
+}
+
+.report-view .question-group .container-title-lbl {
+    left: 10px;
+    right: unset;
+}
+
+.report-view .container-input {
+    text-align: center;
+}
+
+.report-view .period-input {
+    width: var(--report-view-period-width);
+    clear: unset;
+    float: right;
+    margin-left: var(--report-view-period-margin);
+    min-height: 5px; /*must have height for empty div - report-view*/
+}
+
+.report-view .period-input fieldset.rating {
+    float: unset;
+    display: inline;
+    margin: auto;
+}
+
+.report-view.relative-panel .period-input fieldset.rating > label {
+    max-width: 30px;
+}
+
+.report-view .container-radiobutton-lbl {
+    float: right;
+    font-weight: bold;
+    width: var(--report-view-period-width);
+    text-align: center;
+    top: -60px;
+}
+
+.report-view.open-survey.has-publish-lbl .container-radiobutton-lbl {
+    top: -85px;
+}
+
+.ReflectionAnswers .report-view .question-group ~ .question-group .relative-panel.has-options-header,
+.ReflectionAnswers .report-view .relative-panel ~ .relative-panel.has-options-header {
+    margin-top: 140px;
+}
+
+.report-view .relative-panel.textual {
+    padding: 0 15px;
+    background: white;
+    border-radius: 15px;
+}
+
+.report-view .container-100 {
+    padding: 10px 0;
+}
+
+.report-view .textual-container-input textarea {
+    margin: 10px 0;
+}
+
+.relative-panel-next,
+.relative-panel-prev {
+    position: absolute;
+    overflow: visible;
+    background: white;
+    top: -30px;
+    color: var(--second-color);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16pt;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 1px 5px 0 5px;
+    z-index: 2;
+}
+
+.relative-panel-next {
+    right: 46px;
+}
+
+.relative-panel-prev {
+    /*left: 290px;*/
+}
+
+@media screen and (max-width:488px) {
+    /* .nav-tabs {
+        margin-bottom: 35px;
+    }*/
+    .report-view .nav-tabs li {
+        height: 55px;
+        background: var(--second-color);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .report-view .container-title-lbl,
+    .report-view .period-title,
+    .report-view .container-100 .text-header {
+        z-index: 10;
+    }
+}
+/*radiobuttons width*/
+.report-view .container-radiobutton-lbl {
+    padding: 0;
+}
+
+.report-view .container-radiobutton-lbl .radiobutton-lbl {
+    margin-right: 0;
+    text-align: left;
+}
+
+.report-view .container-input .radiobutton,
+.report-view .container-radiobutton-lbl .radiobutton-lbl {
+    width: 6%;
+}
+
+
+.report-view .container-radiobutton-lbl .radiobutton-lbl div {
+    -webkit-line-clamp: 1;
+}
+
+.report-view div[data-options="0"] .container-radiobutton-lbl .radiobutton-lbl div
+.report-view div[data-options="1"] .container-radiobutton-lbl .radiobutton-lbl div,
+.report-view div[data-options="2"] .container-radiobutton-lbl .radiobutton-lbl div,
+.report-view div[data-options="3"] .container-radiobutton-lbl .radiobutton-lbl div,
+.report-view div[data-options="4"] .container-radiobutton-lbl .radiobutton-lbl div {
+    -webkit-line-clamp: 2;
+}
+
+
+@for $i from 1 through $max-radiobuttons {
+    .report-view.relative-panel[data-options="#{$i}"] .container-input .radiobutton,
+    .report-view.relative-panel[data-options="#{$i}"] .container-radiobutton-lbl .radiobutton-lbl,
+    .report-view.relative-panel[data-options="#{$i}"] .period-input fieldset.rating > label {
+        width: #{100% / $i};
+    }
+}
+
+
+
+.report-view .period-title:nth-child(1),
+.report-view .container-100:nth-child(2) .text-header {
+    right: calc((var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 - 40px); /*15px padding + 40px = half of label*/
+}
+
+$counter: 1;
+
+@for $i from 2 through $max-periods {
+    .report-view .period-title:nth-child(#{$i}),
+    .report-view .container-100:nth-child(#{$i + 1}) .text-header {
+        right: calc((var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 - 40px + ((var(--report-view-period-width) + var(--report-view-period-margin)) * #{$counter}));
+    }
+
+    $counter: $counter + 1;
+}
+/*menu hides at 768px... so first is manual*/
+.report-view .period-input:nth-child(n+11),
+.report-view .period-title:nth-child(n+10),
+.report-view .container-100:nth-child(n+11) .text-header {
+    display: none;
+}
+/*only show last*/
+@media screen and (max-width: #{$sreen-width-one-period}px) {
+    .report-view .period-input:nth-child(n+3),
+    .report-view .period-title:nth-child(n+2),
+    .report-view .container-100:nth-child(n+3) .text-header {
+        display: none;
+    }
+}
+
+@for $i from 4 through $max-periods {
+    $sreen-width: $sreen-width-two-period + ($period-width * ($i - 4));
+
+    @media screen and (max-width: #{$sreen-width}px) {
+        .report-view .period-input:nth-child(n+#{$i}),
+        .report-view .period-title:nth-child(n+#{$i - 1}),
+        .report-view .container-100:nth-child(n+#{$i}) .text-header {
+            display: none;
+        }
+    }
+}
+
+
+
+@for $max from $max-periods through 1 {
+
+    .report-view[data-group-active="1"] .relative-panel-prev,
+    .report-view[data-group-active="1"] .relative-panel-prev,
+    .report-view[data-group-count="#{$max}"][data-group-active="#{$max}"] .relative-panel-next {
+        /*   pointer-events: none;
+        cursor: default;
+        opacity: .5;*/
+        display: none;
+    }
+
+    @for $active from $max - 1 through 1 {
+
+        .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-input:nth-child(-n+#{$max - $active + 1}),
+        .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-title:nth-child(-n+#{$max - $active}),
+        .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .container-100:nth-child(-n+#{$max - $active + 1}) .text-header {
+            display: none;
+        }
+
+        .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-title:nth-child(#{$max - $active + 1}),
+        .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .container-100:nth-child(#{$max - $active + 2}) .text-header {
+            right: calc((var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 - 40px); /*15px padding + 40px = half of label*/
+        }
+
+        $counter: 1;
+
+        @if($max - $active + 2 <= $max-periods) {
+            @for $i from $max - $active + 2 through $max-periods {
+                .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-title:nth-child(#{$i}),
+                .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .container-100:nth-child(#{$i + 1}) .text-header {
+                    right: calc((var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 - 40px + ((var(--report-view-period-width) + var(--report-view-period-margin)) * #{$counter}));
+                }
+
+                $counter: $counter + 1;
+            }
+        }
+
+        .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-input:nth-child(n+#{$max - $active + 2}),
+        .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-title:nth-child(n+#{$max - $active + 1}),
+        .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .container-100:nth-child(n+#{$max - $active + 2}) .text-header {
+            display: unset;
+        }
+        /*only show active + as much as possible based on screen width*/
+        @media screen and (max-width: #{$sreen-width-one-period}px) {
+            .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-input:nth-child(n+#{$max - $active + 3}),
+            .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-title:nth-child(n+#{$max - $active + 2}),
+            .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .container-100:nth-child(n+#{$max - $active + 3}) .text-header {
+                display: none;
+            }
+        }
+
+        @for $i from 4 through $max-periods {
+            $sreen-width: $sreen-width-two-period + ($period-width * ($i - 4));
+
+            @media screen and (max-width: #{$sreen-width}px) {
+                .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-input:nth-child(n+#{$max - $active + $i}),
+                .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .period-title:nth-child(n+#{$max - $active + $i - 1}),
+                .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .container-100:nth-child(n+#{$max - $active + $i}) .text-header, {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+/*prev position*/
+$counter: $max-periods + 1;
+
+@for $i from $max-periods + 4 through 4 {
+    $sreen-width: $sreen-width-two-period + ($period-width * ($i - 4));
+
+    @media screen and (max-width: #{$sreen-width}px) {
+        .relative-panel-prev {
+            right: calc(85px + (var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 - 40px + ((var(--report-view-period-width) + var(--report-view-period-margin)) * #{$counter}));
+        }
+    }
+
+    $counter: $counter - 1;
+}
+
+@media screen and (max-width: #{$sreen-width-one-period}px) {
+    .relative-panel-prev {
+        right: calc(85px + (var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 - 40px);
+    }
+
+    .has-relative-panel-status .relative-panel-prev {
+        right: calc(85px + (var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 + 20px);
+    }
+}
+
+/*prev: hide/show based on nr-of-periods/nr-visible*/
+@for $i from $max-periods + 4 through 4 {
+    $sreen-width: $sreen-width-two-period + ($period-width * ($i - 4));
+
+    @media screen and (max-width: #{$sreen-width}px) {
+        @for $max from $max-periods through 1 {
+
+            $nr-visible: $i - 4 + 2;
+
+            /*.test-visible-periods {
+                nr-visible: "#{$nr-visible}";
+                max: "#{$max}";
+            }*/
+
+
+            @for $active from $max through 1 {
+                @if($active <= $nr-visible) {
+                    .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .relative-panel-prev {
+                        display: none;
+                    }
+                }
+
+                @if($active > $nr-visible) {
+                    .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .relative-panel-prev {
+                        display: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    $counter: $counter - 1;
+}
+
+@media screen and (max-width: #{$sreen-width-one-period}px) {
+    @for $max from $max-periods through 1 {
+
+        $nr-visible: 1;
+
+        /*.test-visible-periods {
+                nr-visible: "#{$nr-visible}";
+                max: "#{$max}";
+            }*/
+
+
+        @for $active from $max through 1 {
+            @if($active <= $nr-visible) {
+                .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .relative-panel-prev {
+                    display: none;
+                }
+            }
+
+            @if($active > $nr-visible) {
+                .report-view[data-group-count="#{$max}"][data-group-active="#{$active}"] .relative-panel-prev {
+                    display: unset;
+                }
+            }
+        }
+    }
+}
+
+.report-view .textual:not(.textual-large) .text-100:not(.group-header) {
+    padding: 10px 0;
+    margin-right: 0 !important;
+}
+
+.report-view .textual:not(.textual-large) .text-100.question-unanswered:not(.group-header) {
+    padding: 10px;
+}
+
+.report-view .textual-large {
+    background: transparent !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+}
+
+.report-view .textual-large .container-100.period-input {
+    width: 100%;
+    position: relative;
+    overflow: visible;
+    margin-top: 50px;
+    padding: 2px 0 0 0;
+}
+
+.report-view .print-title ~ .question-group .textual-large .user ~ .container-100.period-input:nth-child(2) {
+    margin-top: 0;
+}
+
+.report-view .print-title ~ .question-group .relative-panel ~ .relative-panel.textual-large .user ~ .container-100.period-input:nth-child(2) {
+    margin-top: 50px;
+}
+
+
+.report-view .textual-large .period-title,
+.report-view .textual-large .container-100 .text-header {
+    right: calc((var(--report-view-period-width) + var(--report-view-period-margin) + 15px) / 2 - 40px) !important;
+}
+
+.report-view .textual-large .period-input,
+.report-view .textual-large .period-title,
+.report-view .textual-large .container-100 .text-header {
+    display: block !important;
+}
+
+.report-view .textual-large .textual-container-input textarea,
+.report-view .textual-large .textual-container-input .text-100 {
+    margin: 0 0 0 0 !important;
+}
+
+.report-view .textual-large .textual-container-input .text-100 ~ textarea,
+.report-view .textual-large .textual-container-input .text-100 ~ .text-100 {
+    margin: 8px 0 0 0 !important;
+}

@@ -1,0 +1,68 @@
+﻿
+.paper-container.front-page .background-wrap {
+    background: url('../app/images/report/inkfriendly/achtergrond.svg');
+}
+
+.paper-container.front-page .login-form {
+    background: url('../app/images/report/inkfriendly/praatwolk.svg');
+    position: relative;
+    top: 5%;
+    width: 180mm;
+    height: 190mm;
+    margin: auto;
+    padding: 50px 0px 45px 0px;
+    color: var(--text-color);
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom center !important;
+}
+
+    .paper-container.front-page .login-form p {
+        margin-top: 66mm;
+        font-size: 12pt;
+    }
+
+        .paper-container.front-page .login-form p b {
+            font-size: 14pt;
+        }
+
+
+.paper-container.front-page img.selected-profile {
+    position: absolute;
+    right: 240px;
+    margin-top: 0;
+    top: 470px;
+    backdrop-filter: none;
+    background: white;
+    padding: 0px;
+    border-radius: 15px;
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid #ededed;
+}
+
+.paper-container.front-page .school-icon {
+    background: white;
+    bottom: unset;
+    top: 470px;
+    left: unset;
+    right: 160px;
+    border: 1px solid #ededed;
+}
+
+.paper-container.front-page {
+    color: var(--text-color);
+}
+
+    .paper-container.front-page .float-start,
+    .paper-container.front-page .float-end {
+        left: 0 !important;
+        right: 0 !important;
+        top: 670px
+    }
+
+    .paper-container.front-page .float-end {
+        top: 700px;
+        font-size: 11pt;
+        font-weight: normal !important;
+    }

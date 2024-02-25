@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_2"
+   data-name="Layer 2"
+   viewBox="0 0 208.39 71.16"
+   version="1.1"
+   sodipodi:docname="krul.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12564"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="5.8064207"
+     inkscape:cx="96.531069"
+     inkscape:cy="36.080748"
+     inkscape:window-width="1350"
+     inkscape:window-height="1040"
+     inkscape:window-x="2132"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g12560" />
+  <defs
+     id="defs12536">
+    <style
+       id="style12534">
+      .cls-1 {
+        stroke-dasharray: 0 0 5 6;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #31c0d0;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g
+     id="Layer_1-2"
+     data-name="Layer 1">
+    <g
+       class="cls-3"
+       id="g12560"
+       transform="matrix(-1,0,0,1,207.88,0)">
+      <path
+         class="cls-1"
+         d="m 207.38,63.93 c -33.23,10.8 -70.46,8.03 -88.61,-4.3 -11.41,-7.75 -18.23,-21.29 -8.09,-32.52 7.34,-8.12 24.62,-16.2 42.42,-14.17 8.64,0.99 21.19,4.78 23.79,12.21 2.14,6.11 -3.22,12.47 -11.28,15.43 -13.79,5.06 -35.69,0.23 -44.59,-7.36 C 109.97,23.81 123.53,14.08 113.49,6.46 108.57,2.73 97.06,-1.19 66,1.28"
+         id="path12558"
+         style="stroke:#02808a;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

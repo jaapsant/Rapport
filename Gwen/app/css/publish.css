@@ -1,0 +1,429 @@
+﻿
+
+.lbl-published, .lbl-unpublished, .lbl-btn-publish {
+    font-size: 10pt;
+    display: inline-block;
+    border-radius: 10px 10px 10px 1px;
+    padding: 2px 10px;
+    float: right;
+}
+
+    .lbl-unpublished i {
+        color: white !important;
+    }
+
+.lbl-unpublished,
+.comments-list .uncompleted-comment .bx-time-five {
+    /*background: #ffee8f;
+    color: #ba9e00;*/
+    background: #f5c550;
+    color: white;
+}
+
+.lbl-published {
+    /*background: var(--color-success-light);
+    color: var(--color-success);*/
+    background: var(--badge-color);
+    color: var(--badge-text-color-light);
+}
+
+.comments-list .uncompleted-comment .bx-time-five:hover,
+.lbl-btn-publish {
+    /*background: #c9f2f5;
+    color: var(--third-color);*/
+    background: var(--badge-color);
+    color: var(--badge-text-color-light);
+    cursor: pointer;
+}
+
+
+.publish-lbl-container {
+    min-width: 145px;
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    z-index: 10;
+}
+
+.block-item .publish-lbl-container {
+    top: 0;
+    right: 0;
+}
+
+    .block-item .publish-lbl-container .lbl-unpublished {
+        padding: 1px 5px
+    }
+
+.ReflectionAnswers .publishable-result .publish-lbl-container,
+.table-view .publishable-result .publish-lbl-container {
+    top: -28px;
+    right: 15px;
+}
+
+.publishable-result.has-relative-panel-status .publish-lbl-container {
+    top: -27px;
+}
+
+.publishable-result.has-relative-panel-status[data-assessor-count="1"] .publish-lbl-container {
+    right: 134px;
+}
+
+.publishable-result.has-relative-panel-status[data-assessor-count="2"] .publish-lbl-container {
+    right: 192px;
+}
+
+.publishable-result.has-relative-panel-status[data-assessor-count="3"] .publish-lbl-container {
+    right: 248px;
+}
+
+.report-view.publishable-result .publish-lbl-container {
+    top: -58px;
+    right: 35px !important;
+}
+
+.print-leerlijn-container .publish-lbl-container {
+    right: -5px;
+    top: 0;
+}
+
+    .print-leerlijn-container .publish-lbl-container span {
+        display: none;
+    }
+
+.print-leerlijn-container .row .publish-lbl-container i {
+    margin: 0;
+}
+
+
+
+.container-img .publish-lbl-container {
+    right: 17px;
+}
+
+.container-img .publish-lbl-container {
+    top: -6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-img .lbl-unpublished,
+.img-20 .lbl-unpublished {
+    /*outline: 2px solid var(--background);*/
+    box-shadow: 0 0 0 2px var(--background);
+}
+
+
+.container-blocks-bewijs .img-20 {
+    overflow: visible;
+}
+
+    .container-blocks-bewijs .img-20 .img-thumb {
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+
+    .container-blocks-bewijs .img-20 .publish-lbl-container {
+        top: -5px;
+    }
+
+.popup .img-30 .publish-lbl-container {
+    top: 4px;
+    right: 4px;
+    z-index: 2;
+}
+
+.container-blocks-bewijs .block {
+    overflow: visible;
+}
+
+    .container-blocks-bewijs .block .publish-lbl-container {
+        right: 5px;
+        top: -5px;
+    }
+
+        .container-blocks-bewijs .block .publish-lbl-container .lbl-unpublished {
+            padding: 2px 5px;
+        }
+
+.popup .publish-lbl-container .lbl-unpublished,
+.popup .publish-lbl-container .lbl-published {
+    /*outline: 2px solid white;*/
+    box-shadow: 0 0 0 2px white;
+}
+
+/*.btn.publish-all-click.can-publish-page {
+    border: 2px solid white;
+    background: #c9f2f5;
+    color: var(--third-color) !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+}*/
+
+
+.lbl-published, .lbl-unpublished, .lbl-btn-publish {
+    font-size: 10pt;
+    /*background: #fff4b8;
+    color: #ad9400;*/
+    display: inline-block;
+    border-radius: 10px 10px 10px 1px;
+    padding: 2px 10px;
+    float: right;
+}
+
+.comments-list .uncompleted-comment .bx-time-five {
+    border-radius: 8px 8px 1px 8px;
+}
+
+.publishable-result .lbl-btn-publish,
+.publishable-result.uncompleted .lbl-published,
+.publishable-result:not(.uncompleted):not(.uncompleted-answer):not(.uncompleted-comment):not(.uncompleted-file) .lbl-unpublished {
+    display: none;
+}
+
+.publishable-result.uncompleted,
+.methodetoetsen .container-70 .uncompleted,
+.skills-detail .uncompleted-file,
+.skills-detail .uncompleted-comment,
+.skills-detail .uncompleted-answer,
+/*.methodetoetsen .table-wrap .uncompleted,*/
+.methodetoetsen .subject-average .uncompleted,
+.container-blocks-bewijs .block.uncompleted-answer,
+.popup .img-30.uncompleted-file,
+.container-blocks-bewijs .publishable-result.uncompleted-file {
+    opacity: 1;
+}
+/*publish btn hover*/
+/*.publishable-result.uncompleted .publish-lbl-container:hover .lbl-published,
+    .publishable-result.uncompleted .publish-lbl-container:hover .lbl-unpublished {
+        display: none !important;
+    }
+
+    .publishable-result.uncompleted .publish-lbl-container:hover .lbl-btn-publish {
+        display: inline-block;
+    }*/
+
+
+.development-point {
+    position: relative;
+}
+
+    .development-point .publish-lbl-container {
+        position: absolute;
+        min-width: unset;
+        display: inline-block;
+        right: 20px;
+        top: 8px;
+    }
+
+        .development-point .publish-lbl-container .lbl-unpublished i {
+            font-size: 11pt !important;
+        }
+
+        .development-point .publish-lbl-container .lbl-published {
+            color: black;
+            background: white;
+        }
+
+            .development-point .publish-lbl-container .lbl-published i {
+                font-size: 13pt !important;
+            }
+
+
+        .development-point .publish-lbl-container .lbl-published,
+        .development-point .publish-lbl-container .lbl-unpublished {
+            padding: 5px;
+        }
+
+.container-blocks-detail .block-container:not(:first-child) .nav-tabs a.active {
+    padding-bottom: 10px !important;
+}
+/*
+.container-blocks-detail .tab-content {
+    padding-top: 11px;
+}*/
+
+
+.skills-detail .img-20.block {
+    overflow: visible;
+}
+
+    .skills-detail .img-20.block .img-thumb {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .skills-detail .img-20.block .img-label,
+    .skills-detail .img-20.block .img-label span {
+        max-width: 140px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+.skills-detail .block .publish-lbl-container .lbl-unpublished {
+    box-shadow: 0 0 0 3px var(--background);
+}
+
+
+.documents .text-sub.float-start {
+    display: flex;
+    overflow: visible;
+}
+
+    .documents .text-sub.float-start .publish-lbl-container {
+        position: unset;
+        display: inline-block;
+        margin-top: -2px;
+        padding-left: 25px;
+    }
+
+.documents .publishable-result.uncompleted .publish-lbl-container:hover .lbl-unpublished,
+.toetsen .publishable-result.uncompleted .publish-lbl-container:hover .lbl-unpublished {
+    display: inline-block; /*while publish single document is not available*/
+}
+
+@media screen and (max-width:900px) {
+    .documents .text-sub.float-start .publish-lbl-container {
+        min-width: 20px;
+    }
+
+        .documents .text-sub.float-start .publish-lbl-container .lbl-unpublished span {
+            display: none;
+        }
+}
+
+.toetsen .text-30.publishable-result {
+    overflow: visible;
+}
+
+.toetsen .text-100.publishable-result {
+    position: relative;
+    z-index: -1;
+}
+
+
+.toetsen .cito-v1 tr .publish-lbl-container {
+    right: unset;
+    left: -40px;
+    top: 10px;
+}
+
+    .toetsen .cito-v1 tr .publish-lbl-container .lbl-unpublished {
+        float: unset;
+        border-radius: 8px 8px 1px 8px;
+    }
+
+.toetsen .lib-f .publish-lbl-container {
+    top: -25px;
+}
+
+
+.classoverview tr.publishable-result td {
+    position: relative;
+}
+
+/*.classoverview tr.publishable-result .publish-lbl-container {
+    position: absolute;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: -150px !important;
+    transform: translateY(calc(50% - 12px));
+}*/
+.classoverview tr.publishable-result .publish-lbl-container {
+    position: unset;
+    min-width: unset;
+}
+
+    .classoverview tr.publishable-result .publish-lbl-container .lbl-published,
+    .classoverview tr.publishable-result .publish-lbl-container .lbl-unpublished {
+        padding: 2px 5px;
+    }
+
+.documents tr .publish-lbl-container {
+    position: unset;
+    display: inline-block;
+}
+
+.documents tr .lbl-published,
+.documents tr .lbl-unpublished,
+.documents tr .lbl-btn-publish,
+.scol.text-center .lbl-published,
+.scol.text-center .lbl-unpublished,
+.scol.text-center .lbl-btn-publish {
+    float: unset;
+}
+
+.classoverview.scol.publishable-result .publish-lbl-container {
+    position: unset;
+    display: inline-block;
+}
+
+
+.skills-detail #classoverview .question-view .publish-lbl-container {
+    position: unset;
+    display: inline-block;
+    min-width: unset;
+}
+
+    .skills-detail #classoverview .question-view .publish-lbl-container .lbl-unpublished {
+        padding: 5px;
+    }
+
+.reflection-table .publish-lbl-container {
+    position: unset;
+    min-width: unset;
+    display: inline-block;
+}
+
+    .reflection-table .publish-lbl-container .lbl-unpublished,
+    .reflection-table .publish-lbl-container .lbl-published {
+        padding: 2px 5px;
+    }
+
+
+table.writingpaper.zo-leer-ik .large-header {
+    position: relative;
+}
+
+    table.writingpaper.zo-leer-ik .large-header div.rotated {
+        min-width: unset;
+        position: absolute;
+        top: 40px;
+    }
+
+.block.img-20 {
+    margin: 5px 5px 5px 5px;
+}
+
+    .block.img-20 .publish-lbl-container {
+        top: -5px;
+    }
+
+.container-blocks-bewijs .uncompleted-file.pending .lbl-unpublished:not(.pending) {
+    display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .publish-lbl-container {
+        min-width: unset;
+    }
+
+    .lbl-unpublished {
+        padding: 2px 6px;
+    }
+
+        .lbl-unpublished span {
+            display: none;
+        }
+
+    .scol.classoverview .lbl-unpublished span {
+        display: inline-block;
+    }
+}
+
+td .lbl-published, td .lbl-unpublished, td .lbl-btn-publish {
+    float: unset;
+}

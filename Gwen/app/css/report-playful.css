@@ -1,0 +1,178 @@
+﻿
+.paper-container.front-page .background-wrap {
+    background: url('../app/images/report/playful/achtergrond.svg');
+}
+
+.paper-container.front-page .login-form {
+    background: url('../app/images/report/playful/praatwolk.svg');
+}
+
+.paper-container.front-page img.selected-profile {
+    position: absolute;
+    right: 100px;
+    margin-top: 0;
+    top: 300px;
+    backdrop-filter: none;
+    background: white;
+    padding: 10px;
+}
+
+.print-title {
+    color: var(--second-color);
+}
+
+    .print-title b {
+        font-family: cabin-sketch-bold, sans-serif;
+        font-size: 24pt;
+        line-height: 25px;
+        color: var(--second-color);
+        background: rgba(255,255,255,.8);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+.container-title-lbl,
+.print-leerlijn-container .text-title {
+    border-bottom: none;
+    background: url('../app/images/report/playful/lijn.png');
+    background-size: 30%;
+    background-repeat: repeat-x;
+    background-position-y: 25px;
+}
+
+.relative-panel.has-chart .container-title-lbl,
+.panel-50 .container-title-lbl {
+    background-size: 60%;
+}
+
+.panel-30 .container-title-lbl {
+    background-size: 100%;
+}
+
+
+
+
+.print-title {
+    /*background: url('../app/images/report/playful/vliegtuig.svg');
+    background-repeat: no-repeat;
+    background-position-x: 25%;*/
+    background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Huis.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+}
+
+
+
+    .print-title.icon_home {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Huis.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_camera {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Camera.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_stars {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Sterren.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_profile {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Profiel.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_calculate {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Rekenen.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_slide {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Glijbaan.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_thumb {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Duim.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_world {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Wereldbol.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_trophy {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Trofee.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_paint {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Kwast.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_blocks {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Blokken.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_file {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Document.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_roll {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Perkament.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_compass {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Kompas.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_heart {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Hart.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_man {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Mannetje.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_music {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Muziek.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_paper_plane {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Vliegtuig.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_fish {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Vis.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_speechbubble {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/textwolk.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_dart {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Doel.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_head {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Hoofd.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_hand {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Hand.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_hands {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Samenwerken.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_lightbulb {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Lampje.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_printer {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Printer.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_conversation {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Kindgesprek.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_more {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/Meer.svg') 21% no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
+
+    .print-title.icon_ipc {
+        background: url('../app/images/report/playful/vliegtuig.svg') 75% no-repeat, url('../app/images/picto/stroke-second-color/ipc.png') 21% / 35px no-repeat, url('../app/images/report/playful/krul.svg') 30% no-repeat;
+    }
